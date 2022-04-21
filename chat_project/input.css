@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Login and Register Page */
+.container-all{
+    @apply h-[100vh] bg-gray-200 flex justify-center items-center p-[20%]
+}
+.container-input{
+    @apply bg-white flex flex-col gap-4 p-4 w-full rounded-lg border-[1px] border-blue-400
+}
+.item{
+    @apply flex flex-col gap-2
+}
+.item input{
+    @apply rounded-md p-2 border-[1px] border-black
+}
+.btn{
+    @apply bg-indigo-600 text-white rounded-md h-10
+}
+.error{
+    @apply bg-red-300 text-red-600 rounded-md p-2
+}
+
+/* ---------------- Home Page ---------------- */
+
+.container-chat{
+    @apply h-[100vh] bg-blue-600 flex gap-[5%] justify-center items-center pb-5 pt-[80px] px-[8%] relative 
+}
+
+/* Navbar */
+.navbar{
+    @apply p-5 font-[500] text-[24px] flex justify-center items-center text-white w-full absolute top-0
+}
+.links{
+    @apply flex gap-7 text-[20px]
+}
+
+/* message main */
+
+.chat{
+    @apply bg-white flex flex-col gap-5 h-[620px] flex-grow-[2] p-5 
+}
+
+.main-chat{
+    @apply h-[700%] overflow-scroll border-[1px] border-gray-400 rounded p-4 flex relative
+}
+
+.write-message{
+    @apply relative
+}
+.write-message input{
+    @apply p-3 w-full border-[1px] border-gray-400 rounded pl-5 pr-36
+}
+
+.limit_char{
+    @apply text-red-600 border-[1px] border-red-600
+}
+
+.btn-send{
+    @apply absolute right-3 top-1 bottom-1 flex gap-3 w-fit
+}
+.icon-send{
+    @apply bg-blue-600 text-white rounded-full w-10 flex justify-center items-center
+}
+
+.container-message{
+    @apply flex flex-col gap-3
+}
+
+.message-show{
+    @apply flex items-center gap-2 w-fit p-2 rounded-md shadow-md
+}
+
+.text-direction{
+    @apply justify-end
+}
+/* show users info */
+
+.container-users{
+    @apply h-[620px] bg-white flex-grow p-5
+}
+
+.user-show{
+    @apply overflow-auto border-[1px] border-gray-400 rounded p-4 flex flex-col gap-5 h-full 
+}
+
+.container-status{
+    @apply relative w-fit
+}
+
+.show-user-info{
+    @apply flex items-center justify-between border-b-[1px] border-b-gray-400 py-3
+}
+.status{
+    @apply w-3 h-3 rounded-full absolute bottom-0 right-0
+}
+.item-user{
+    @apply flex gap-3 justify-center items-center
+}
+.item-user img{
+    @apply w-14 h-14 rounded-full
+}
+.item-user button{
+    @apply flex items-center
+}
+
+.icon-block:hover{
+    @apply text-red-500
+}
+
+.icon-unblock:hover{
+    @apply text-green-500
+}
+
+/* message Photo */
+
+.image-show{
+    @apply flex flex-col w-fit gap-2 p-2 rounded-md shadow-md
+}
+
+.image-show img{
+    @apply w-[200px] h-[250px]
+}
+
+/* modal style for all modal */
+
+.modal{
+    @apply hidden fixed z-[1] inset-x-[200px] top-[100px] overflow-auto bg-gray-200 rounded-md p-4 
+}
+
+.close{
+    @apply text-red-300 text-[28px] font-bold absolute top-0 right-4 
+}
+.close:hover , .close:focus{
+    @apply text-red-600 cursor-pointer
+}
+
+.edit-container{
+    @apply flex flex-col gap-5 bg-white p-5 relative
+}
+.item{
+    @apply flex flex-col gap-5
+}
+.modal-input{
+    @apply border-[1px] border-gray-400 p-2
+}
+.btn-modal{
+    @apply w-24 h-10 bg-indigo-700 text-white
+}
